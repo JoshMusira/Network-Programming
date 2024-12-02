@@ -1,0 +1,36 @@
+:root {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(6, 241, 77, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(4, 72, 219, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 10px 0 rgba(166, 6, 240, 0.5);
+  }
+}
+
+.animated-shadow {
+  animation: shadow-pulse 2s infinite;
+}
